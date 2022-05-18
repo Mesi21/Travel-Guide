@@ -1,0 +1,30 @@
+.countryDetails {
+  text-align: center;
+  color: #fff;
+}
+
+.cards {
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 21rem 21rem;
+  grid-gap: 2rem;
+  grid-auto-flow: row;
+}
+
+.card {
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 20px;
+  background-color: rgb(51, 90, 134);
+}
+
+.card img {
+  height: 10rem;
+  width: 20rem;
+  margin: auto;
+}
+
+.langs {
+  width: 100%;
+  margin-right: 1rem;
+}
