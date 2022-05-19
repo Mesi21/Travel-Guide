@@ -1,4 +1,5 @@
-const GET_COUNTRIES = 'GET-COUNTRIES';
+const GET_COUNTRIES = 'GET_COUNTRIES';
+const FILTER_COUNTRIES = 'FILTER_COUNTRIES';
 const url = 'https://restcountries.com/v3.1/subregion/europe';
 
 const stateInit = [];
@@ -8,10 +9,17 @@ export const getCountries = (payload) => ({
   payload,
 });
 
+export const filterCountries = (payload) => ({
+  type: FILTER_COUNTRIES,
+  payload,
+});
+
 const countriesReducer = (state = stateInit, action) => {
   switch (action.type) {
     case GET_COUNTRIES:
       return action.payload;
+    case FILTER_COUNTRIES:
+      return state.filter((c) => c.sub.includes(action.payload));
     default:
       return state;
   }
@@ -20,7 +28,7 @@ const countriesReducer = (state = stateInit, action) => {
 export const getCountriesList = () => async (dispatch) => {
   const countries = await fetch(`${url}`)
     .then((response) => response.json())
-    .catch((err) => console.error(err));
+    .catch((err) => err);
   const countryInfo = [];
   countries.map((country) => countryInfo.push({
     name: country.name.common,

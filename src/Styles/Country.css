@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Montserrat:wght@100&family=Roboto+Slab:wght@100&display=swap');
+
 .countryDetails {
+  font-family: 'Lato';
   text-align: center;
   color: #fff;
 }
@@ -7,20 +10,22 @@
   text-align: center;
   justify-content: center;
   display: grid;
-  grid-template-columns: 21rem 21rem;
-  grid-gap: 2rem;
+  grid-template-columns: 50% 50%;
   grid-auto-flow: row;
 }
 
 .card {
-  border: 1px solid rgb(185, 185, 185);
-  border-radius: 20px;
-  background-color: rgb(51, 90, 134);
+  background-color: var(--light-blue);
+  padding: 1rem;
+}
+
+.headerInfo h1{
+  font-weight: 700;
 }
 
 .card img {
-  height: 10rem;
-  width: 20rem;
+  height: 6rem;
+  width: 8rem;
   margin: auto;
 }
 

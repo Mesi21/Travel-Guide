@@ -10,16 +10,16 @@ const Country = ({
       <img src={flag} alt="flag" />
     </div>
     <div>
+      <div>
+        <small>Subregion: </small>
+        {sub}
+      </div>
       <small>Spoken languages: </small>
       {Object.entries(lang).map(([k, l]) => (
         <span key={k} className="langs">
           {l}
         </span>
       ))}
-      <div>
-        <small>Subregion: </small>
-        {sub}
-      </div>
     </div>
   </div>
 );
