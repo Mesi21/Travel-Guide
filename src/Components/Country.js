@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import '../Styles/Country.css';
 
 const Country = ({
@@ -7,17 +8,17 @@ const Country = ({
   <div id={id} className="countryDetails">
     <div className="headerInfo">
       <h1>{name}</h1>
-      <img src={flag} alt="flag" />
+      <Link to={`/details/${name}`}><img src={flag} alt="flag" /></Link>
     </div>
     <div>
       <div>
         <small>Subregion: </small>
-        {sub}
+        <small><em>{sub}</em></small>
       </div>
       <small>Spoken languages: </small>
       {Object.entries(lang).map(([k, l]) => (
         <span key={k} className="langs">
-          {l}
+          <small>{l}</small>
         </span>
       ))}
     </div>

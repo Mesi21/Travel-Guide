@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import Country from './Country';
 import { getCountriesList } from '../Redux/countries/countries';
 import store from '../Redux/configureStore';
 import '../Styles/AllCountries.css';
 
 const AllCountries = () => {
+  const allList = useSelector((state) => state.countriesReducer);
   let countries = [];
   const [filteredCountries, setFilteredCountries] = useState([]);
   const dispatchAction = useDispatch();
@@ -31,20 +33,37 @@ const AllCountries = () => {
         <input type="text" placeholder="Filter" onChange={handleChange} />
       </div>
       <div className="cards">
-        {filteredCountries.map((c) => (
-          <>
-            <div key={c.id} className="card">
-              <Country
-                id={c.id}
-                name={c.name}
-                region={c.region}
-                lang={c.lang}
-                sub={c.sub}
-                flag={c.flag}
-              />
-            </div>
-          </>
-        ))}
+        {(filteredCountries.length === 0)
+          ? allList.map((c) => (
+            <>
+              <div key={c.id} className="card">
+                <Country
+                  key={uuidv4()}
+                  id={c.id}
+                  name={c.name}
+                  region={c.region}
+                  lang={c.lang}
+                  sub={c.sub}
+                  flag={c.flag}
+                />
+              </div>
+            </>
+          ))
+          : filteredCountries.map((c) => (
+            <>
+              <div key={c.id} className="card">
+                <Country
+                  key={c.id}
+                  id={c.id}
+                  name={c.name}
+                  region={c.region}
+                  lang={c.lang}
+                  sub={c.sub}
+                  flag={c.flag}
+                />
+              </div>
+            </>
+          ))}
       </div>
     </div>
   );
