@@ -1,0 +1,29 @@
+.detailsPage {
+  margin: 7rem 0;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+}
+
+.detailsPage ul {
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.8rem;
+}
+
+.langs {
+  list-style: circle;
+  width: 30%;
+  margin: 0 auto;
+}
+
+#flagBox {
+  background-color: var(--dark-blue);
+  width: 100%;
+}
+
+#flagBox img {
+  max-width: 60%;
+  margin: 1.2rem auto;
+}

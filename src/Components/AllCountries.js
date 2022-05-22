@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { v4 as uuidv4 } from 'uuid';
 import Country from './Country';
 import { getCountriesList } from '../Redux/countries/countries';
 import store from '../Redux/configureStore';
@@ -35,19 +34,17 @@ const AllCountries = () => {
       <div className="cards">
         {(filteredCountries.length === 0)
           ? allList.map((c) => (
-            <>
-              <div key={c.id} className="card">
-                <Country
-                  key={uuidv4()}
-                  id={c.id}
-                  name={c.name}
-                  region={c.region}
-                  lang={c.lang}
-                  sub={c.sub}
-                  flag={c.flag}
-                />
-              </div>
-            </>
+            <div key={c.id} className="card">
+              <Country
+                id={c.id}
+                name={c.name}
+                region={c.region}
+                lang={c.lang}
+                sub={c.sub}
+                flag={c.flag}
+              />
+            </div>
+
           ))
           : filteredCountries.map((c) => (
             <>

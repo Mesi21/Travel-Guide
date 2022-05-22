@@ -1,14 +1,13 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import store from './Redux/configureStore';
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
 import Details from './Pages/Details';
 import { getCountriesList } from './Redux/countries/countries';
 
 const App = () => {
-  const dispatchAction = useDispatch();
-  dispatchAction(getCountriesList());
+  store.dispatch(getCountriesList());
   return (
     <>
       <Navbar />

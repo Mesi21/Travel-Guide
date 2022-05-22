@@ -1,36 +1,64 @@
-// import { useSelector } from 'react-redux';
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { getCountries } from '../Redux/countries/countries';
-// import { getCountriesList } from '../Redux/countries/countries';
+import { getData } from '../Redux/countries/countries';
+import '../Styles/Details.css';
 
 const Details = () => {
   const dispatchAction = useDispatch();
-  const name = useParams();
+  const { name } = useParams();
+  const selectedCountry = useSelector((state) => state.countriesReducer);
+  console.log(selectedCountry);
+
   useEffect(() => {
-    dispatchAction(getCountriesList(name));
-  })
-  console.log(name, flag);
+    dispatchAction(getData(name));
+  }, [name]);
+
   return (
-    <>
-      <div className="headerInfo">
-        <h1>{name}</h1>
-        <img src={flag} alt="flag" />
-      </div>
-      <div>
-        <div>
-          <small>Subregion: </small>
-          <small><em>{sub}</em></small>
-        </div>
-        <small>Spoken languages: </small>
-        {Object.entries(lang).map(([k, l]) => (
-          <span key={k} className="langs">
-            <small>{l}</small>
-          </span>
-        ))}
-      </div>
-    </>
+    <div className="detailsPage flex-column">
+      <ul>
+        <li><h1>{selectedCountry[0].name}</h1></li>
+        <li><h3>{selectedCountry[0].capital}</h3></li>
+        <li id="flagBox"><img src={selectedCountry[0].flag} alt="flag" /></li>
+        <li>
+          <small>
+            Subregion:
+            {' '}
+            <em>{selectedCountry[0].sub}</em>
+          </small>
+        </li>
+        <li>
+          Official name:
+          {' '}
+          {selectedCountry[0].offName}
+        </li>
+        <li>
+          Spoken languages:
+          {Object.entries(selectedCountry[0].lang).map(([k, l]) => (
+            <li key={k} className="langs">
+              <small>{l}</small>
+            </li>
+          ))}
+        </li>
+        <li>
+          Area:
+          {' '}
+          {selectedCountry[0].area}
+        </li>
+        {(selectedCountry[0].unMember)
+          ? <li><small>UN Member</small></li> : <li><small>Not UN Member</small></li>}
+        <li>
+          Population:
+          {' '}
+          {selectedCountry[0].pop}
+        </li>
+        <li>
+          Time-zones:
+          {' '}
+          {selectedCountry[0].time}
+        </li>
+      </ul>
+    </div>
   );
 };
 
