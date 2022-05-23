@@ -8,7 +8,6 @@ const Details = () => {
   const dispatchAction = useDispatch();
   const { name } = useParams();
   const selectedCountry = useSelector((state) => state.countriesReducer);
-  console.log(selectedCountry);
 
   useEffect(() => {
     dispatchAction(getData(name));
