@@ -8,18 +8,14 @@ const Country = ({
   <div id={id} className="countryDetails">
     <div className="headerInfo">
       <h1>{name}</h1>
+      <p><em>{sub}</em></p>
       <Link to={`/details/${name}`}><img src={flag} alt="flag" /></Link>
     </div>
-    <div>
-      <div>
-        <small>Subregion: </small>
-        <small><em>{sub}</em></small>
-      </div>
-      <small>Spoken languages: </small>
+    <div className="spokenLangs flex-row">
       {Object.entries(lang).map(([k, l]) => (
-        <span key={k} className="langs">
-          <small>{l}</small>
-        </span>
+        <div key={k} className="langs">
+          <p><small><em>{l}</em></small></p>
+        </div>
       ))}
     </div>
   </div>

@@ -32,7 +32,7 @@ const AllCountries = () => {
         <input type="text" placeholder="Filter" onChange={handleChange} />
       </div>
       <div className="cards">
-        {(filteredCountries.length === 0)
+        {(filteredCountries.length === 0 || filteredCountries.length === 1)
           ? allList.map((c) => (
             <div key={c.id} className="card">
               <Country
@@ -44,7 +44,6 @@ const AllCountries = () => {
                 flag={c.flag}
               />
             </div>
-
           ))
           : filteredCountries.map((c) => (
             <>

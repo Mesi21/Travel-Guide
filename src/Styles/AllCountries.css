@@ -25,3 +25,7 @@
 .langs {
   font-weight: 700;
 }
+
+.card {
+  padding: 1.5rem 1rem;
+}

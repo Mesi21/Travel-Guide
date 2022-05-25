@@ -1,5 +1,16 @@
+li:nth-child(odd) {
+  background: var(--dark-blue);
+  font-size: 20px;
+  color: #ffffff;
+}
+
+li {
+  border-radius: 5px;
+}
+
 .detailsPage {
   margin: 7rem 0;
+  width: 100%;
   justify-content: center;
   align-items: center;
   color: var(--white);
@@ -10,12 +21,6 @@
   text-decoration: none;
   list-style: none;
   line-height: 1.8rem;
-}
-
-.langs {
-  list-style: circle;
-  width: 30%;
-  margin: 0 auto;
 }
 
 #flagBox {

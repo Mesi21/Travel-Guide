@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
 import Details from './Pages/Details';
 import { getCountriesList } from './Redux/countries/countries';
+import Footer from './Components/Footer';
 
 const App = () => {
   store.dispatch(getCountriesList());
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/details/:name" element={<Details />} />
       </Routes>
+      <Footer />
     </>
   );
 };
