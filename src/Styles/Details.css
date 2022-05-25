@@ -1,15 +1,11 @@
-li:nth-child(odd) {
-  background: var(--dark-blue);
-  font-size: 20px;
-  color: #ffffff;
-}
-
-li {
-  border-radius: 5px;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .detailsPage {
-  margin: 7rem 0;
+  margin: 4rem 0;
+  padding:0;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -17,10 +13,33 @@ li {
   text-align: center;
 }
 
+.back, .allStats {
+  width:100%;
+  line-height: 2rem;
+}
+
+.back {
+  background-color: var(--dark-blue);
+}
+
+.back:hover {
+  cursor: pointer;
+}
+
+.allStats {
+  padding: 2rem 0;
+}
+
 .detailsPage ul {
   text-decoration: none;
   list-style: none;
   line-height: 1.8rem;
+  padding: 3rem 0;
+}
+
+.detailsPage li:nth-child(odd) {
+  background: var(--dark-blue);
+  color: var(--white);
 }
 
 #flagBox {
@@ -28,7 +47,11 @@ li {
   width: 100%;
 }
 
-#flagBox img {
+.allStats img {
   max-width: 60%;
   margin: 1.2rem auto;
+}
+
+.stats {
+  color: var(--white);
 }
