@@ -12,7 +12,7 @@ It is created with [Create-React-App](https://github.com/facebook/create-react-a
 
 ## Screenshot
 
-![]()
+![All Countries](./src/Assets/countries.jpg) | ![All Countries](./src/Assets/details.jpg)
 
 ## Live version
 
