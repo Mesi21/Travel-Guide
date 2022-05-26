@@ -13,7 +13,7 @@
 
 ## Live version
 
-For the live version of this project visit the following [Netlify](https://harmonious-elf-f99081.netlify.app) 
+For the live version of this project visit the following [Heroku](https://travel-guide2022.herokuapp.com/) 
 
 ## Get started
 
