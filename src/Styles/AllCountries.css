@@ -16,7 +16,7 @@
 .inputPlace {
   margin: 0;
   height: 4rem;
-  padding: 2rem auto;
+  padding: 2rem 0;
   background-color: var(--light-blue);
   justify-content: center;
 }

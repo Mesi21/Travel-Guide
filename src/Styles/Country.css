@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Montserrat:wght@100&family=Roboto+Slab:wght@100&display=swap');
 
 .countryDetails {
-  font-family: 'Lato';
+  font-family: 'Lato', serif;
   text-align: center;
   color: #fff;
 }
@@ -19,7 +19,7 @@
   padding: 1rem;
 }
 
-.headerInfo h1{
+.headerInfo h1 {
   font-weight: 700;
 }
 

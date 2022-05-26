@@ -70,9 +70,15 @@ Object {
         class="countriesContainer"
       >
         <div
-          class="filter flex-row"
+          class="filter flex-col"
         >
-          Filter countries by region:
+          <p>
+            Filter countries by region:
+          </p>
+        </div>
+        <div
+          class="inputPlace flex-row"
+        >
           <input
             placeholder="Filter"
             type="text"
@@ -89,9 +95,15 @@ Object {
       class="countriesContainer"
     >
       <div
-        class="filter flex-row"
+        class="filter flex-col"
       >
-        Filter countries by region:
+        <p>
+          Filter countries by region:
+        </p>
+      </div>
+      <div
+        class="inputPlace flex-row"
+      >
         <input
           placeholder="Filter"
           type="text"

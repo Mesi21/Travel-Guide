@@ -5,7 +5,7 @@ ul {
 
 .detailsPage {
   margin: 4rem 0;
-  padding:0;
+  padding: 0;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -13,8 +13,9 @@ ul {
   text-align: center;
 }
 
-.back, .allStats {
-  width:100%;
+.back,
+.allStats {
+  width: 100%;
   line-height: 2rem;
 }
 
