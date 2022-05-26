@@ -2,7 +2,7 @@
 
 <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 
-> This website is a basic travel guide with informations about the european countries fetching from an external API.
+> This website is meant to be a travel guide with informations about the european countries. The data is fetched from an external API.
 > It is created with [Create-React-App](https://github.com/facebook/create-react-app)
 
 ---
