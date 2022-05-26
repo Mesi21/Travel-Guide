@@ -27,14 +27,28 @@ ul {
 }
 
 .allStats {
-  padding: 2rem 0;
+  padding: 0;
+}
+
+.mainInfo {
+  padding: 3rem;
+  background-color: var(--light-blue);
 }
 
 .detailsPage ul {
   text-decoration: none;
   list-style: none;
   line-height: 1.8rem;
-  padding: 3rem 0;
+  padding: 0;
+}
+
+.detailsPage li {
+  padding: 0 1rem;
+  line-height: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .detailsPage li:nth-child(odd) {

@@ -20,56 +20,51 @@ const Details = () => {
     <div className="detailsPage flex-column">
       <div className="back"><FaRegArrowAltCircleLeft onClick={handleClick} /></div>
       <div className="allStats">
-        <h1>{selectedCountry[0].name}</h1>
-        <img src={selectedCountry[0].flag} alt="flag" />
+        <div className="mainInfo">
+          <h1>{selectedCountry[0].name}</h1>
+          <img src={selectedCountry[0].flag} alt="flag" />
+        </div>
         <ul>
-          <li className="stats">
-            <em>
+          <li className="stats flex-row">
+            <p>
               Capital city:
-              {' '}
+            </p>
+            <p>
               {selectedCountry[0].capital}
-            </em>
+            </p>
           </li>
-          <li className="stats">
-            <small>
-              Subregion:
-              {' '}
-              <em>{selectedCountry[0].sub}</em>
-            </small>
+          <li className="stats flex-row">
+            <p>Subregion:</p>
+            <p>{selectedCountry[0].sub}</p>
           </li>
-          <li className="stats">
-            Official name:
-            {' '}
-            {selectedCountry[0].offName}
+          <li className="stats flex-row">
+            <p>Official name:</p>
+            <p>{selectedCountry[0].offName}</p>
           </li>
-          <li className="stats">
-            <span>
-              Spoken languages:
-              {' '}
+          <li className="stats flex-row">
+            <p>Spoken languages:</p>
+            <p>
               {Object.entries(selectedCountry[0].lang).map(([k, l]) => (
                 <small key={k}>
                   {l}
                   {' '}
                 </small>
               ))}
-            </span>
+            </p>
           </li>
-          <li className="stats">
-            Area:
-            {' '}
-            {selectedCountry[0].area}
+          <li className="stats flex-row">
+            <p>Area:</p>
+            <p>{selectedCountry[0].area}</p>
           </li>
           {(selectedCountry[0].unMember)
-            ? <li className="stats"><small>UN Member</small></li> : <li className="stats"><small>Not UN Member</small></li>}
-          <li className="stats">
-            Population:
-            {' '}
-            {selectedCountry[0].pop}
+            ? <li className="stats flex-row"><small>UN Member</small></li> : <li className="stats"><small>Not UN Member</small></li>}
+          <li className="stats flex-row">
+            <p>Population:</p>
+            <p>{selectedCountry[0].pop}</p>
           </li>
-          <li className="stats">
-            Time-zones:
-            {' '}
-            {selectedCountry[0].time}
+          <li className="stats flex-row">
+            <p>Time-zones:</p>
+            <p>{selectedCountry[0].time}</p>
           </li>
         </ul>
       </div>

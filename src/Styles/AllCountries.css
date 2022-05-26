@@ -5,16 +5,24 @@
 .filter {
   width: 100%;
   height: 3rem;
-  padding: 0 0.5rem;
+  padding: 0.9rem 0.5rem 0.9rem 1.5rem;
   background-color: var(--dark-blue);
   color: var(--white);
-  justify-content: space-between;
+  text-transform: uppercase;
   align-items: center;
-  border: none;
+  font-weight: 700;
 }
 
-.filter input {
-  width: 13rem;
+.inputPlace {
+  margin: 0;
+  height: 4rem;
+  padding: 2rem auto;
+  background-color: var(--light-blue);
+  justify-content: center;
+}
+
+input {
+  width: 90%;
   height: 2rem;
   border-radius: 0.7rem;
   background-color: var(--white);
@@ -27,5 +35,6 @@
 }
 
 .card {
+  background-color: var(--darker-blue);
   padding: 1.5rem 1rem;
 }

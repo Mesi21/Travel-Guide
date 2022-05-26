@@ -27,8 +27,10 @@ const AllCountries = () => {
 
   return (
     <div className="countriesContainer">
-      <div className="filter flex-row">
-        Filter countries by region:
+      <div className="filter flex-col">
+        <p>Filter countries by region:</p>
+      </div>
+      <div className="inputPlace flex-row">
         <input type="text" placeholder="Filter" onChange={handleChange} />
       </div>
       <div className="cards">

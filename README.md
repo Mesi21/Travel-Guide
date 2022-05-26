@@ -1,12 +1,9 @@
 # Travel-Guide
 
-# SOON TO BE UPDATED...
-
 <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 
-> This website is a basic travel guide with informations about the european countries.
-> 
-It is created with [Create-React-App](https://github.com/facebook/create-react-app)
+> This website is a basic travel guide with informations about the european countries fetching from an external API.
+> It is created with [Create-React-App](https://github.com/facebook/create-react-app)
 
 ---
 
@@ -16,7 +13,7 @@ It is created with [Create-React-App](https://github.com/facebook/create-react-a
 
 ## Live version
 
-For the live version of this project visit the following [Netlify](https:// .app/) and [Heroku](https:// .herokuapp.com/) links.
+For the live version of this project visit the following [Netlify](https://harmonious-elf-f99081.netlify.app) 
 
 ## Get started
 
@@ -42,9 +39,8 @@ For the live version of this project visit the following [Netlify](https:// .app
 
 #### :bust_in_silhouette: Molnar Emese 
   - [Mesi21](https://github.com/Mesi21)
-  - [LinkedIn](https://www.linkedin.com/in/emesemesimolnar/).  
+  - [LinkedIn](https://www.linkedin.com/in/emesemesimolnar/)  
   - [Twitter](https://twitter.com/buksimesi21) 
-
 
 ## 🤝 Contributing
 All contributions, issues and feature requests are welcome!
@@ -56,11 +52,13 @@ All contributions, issues and feature requests are welcome!
 5. Create a new Pull Request
 
 # Acknowledgments
-[Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for a great design.
+- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for a great design.
+- [RestCountries API](https://restcountries.com/v3.1).
+- [Microverse](https://www.microverse.org/).
 
 # Show your support:
 
-Give a :star: if you liked the app
+Give a :star: if you liked the app.
 
 # License
 - This project is [MIT](LICENSE.md) licensed.
