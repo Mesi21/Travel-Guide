@@ -1,26 +1,25 @@
-# Space Travelers Hub
+# Travel-Guide
 
 <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 
-> This website is for a company that provides commercial and scientific space travel services. The website allow users to book rockets and join selected space missions.
-> 
-It is created with [Create-React-App](https://github.com/facebook/create-react-app)
+> This website is meant to be a travel guide with informations about the european countries. The data is fetched from an external API.
+> It is created with [Create-React-App](https://github.com/facebook/create-react-app)
 
 ---
 
 ## Screenshot
 
-![missionspage](https://user-images.githubusercontent.com/12524453/168415237-3fdd2745-9e46-41cb-befa-b061b5f9b02a.png)
+![All Countries](./src/Assets/countries.jpg) | ![All Countries](./src/Assets/details.jpg)
 
 ## Live version
 
-For the live version of this project visit the following [Netlify](https:// .app/) and [Heroku](https:// .herokuapp.com/) links.
+For the live version of this project visit the following [Heroku](https://travel-guide2022.herokuapp.com/) 
 
 ## Get started
 
 ```bash
-   git clone git@github.com:Mesi21/Space-Travelers.git
-   cd into the folder by typing: cd Space-Travelers
+   git clone git@github.com:Mesi21/Travel-Guide.git
+   cd into the folder by typing: cd Travel-Guide
 ```
 
  :heavy_plus_sign: add your contribution if you'd like
@@ -40,27 +39,27 @@ For the live version of this project visit the following [Netlify](https:// .app
 
 #### :bust_in_silhouette: Molnar Emese 
   - [Mesi21](https://github.com/Mesi21)
-  - [LinkedIn](https://www.linkedin.com/in/emesemesimolnar/).  
+  - [LinkedIn](https://www.linkedin.com/in/emesemesimolnar/)  
   - [Twitter](https://twitter.com/buksimesi21) 
-
-#### :bust_in_silhouette: Wuletaw Wonte 
-  - [wuletawwonte](https://github.com/wuletawwonte)
-  - [LinkedIn](https://www.linkedin.com/in/wuletaw-wonte/).  
-  - [Twitter](https://twitter.com/wuletaww) 
-
 
 ## 🤝 Contributing
 All contributions, issues and feature requests are welcome!
 
-1. Fork it (https://github.com/Mesi21/Space-Travelers.git)
+1. Fork it (https://github.com/Mesi21/Travel-Guide.git)
 2. Create your working branch (git checkout -b [choose-a-name])
 3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
 4. Push to the branch (git push origin [chosen-name])
 5. Create a new Pull Request
 
-## Show your support:
+# Acknowledgments
+- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for a great design.
+- [RestCountries API](https://restcountries.com/v3.1).
+- [Microverse](https://www.microverse.org/).
 
-Give a :star: if you liked the app
+# Show your support:
+
+Give a :star: if you liked the app.
 
 # License
-This project is [MIT](LICENSE.md) licensed.
+- This project is [MIT](LICENSE.md) licensed.
+- This project is also licensed under [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/).

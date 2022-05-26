@@ -1,0 +1,16 @@
+.navbar {
+  width: 100%;
+  background-color: var(--blue) !important;
+  height: 4rem;
+  color: var(--white);
+}
+
+#logo {
+  width: 70%;
+  margin-left: 0.8rem;
+}
+
+.icon {
+  width: 20%;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Montserrat:wght@100&family=Roboto+Slab:wght@100&display=swap');
+
+.countryDetails {
+  font-family: 'Lato', serif;
+  text-align: center;
+  color: #fff;
+}
+
+.cards {
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-flow: row;
+}
+
+.card {
+  background-color: var(--light-blue);
+  padding: 1rem;
+}
+
+.headerInfo h1 {
+  font-weight: 700;
+}
+
+.card img {
+  height: 6rem;
+  width: 8rem;
+  margin: auto;
+}
+
+.spokenLangs {
+  font-size: smaller;
+}

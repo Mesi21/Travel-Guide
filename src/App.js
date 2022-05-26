@@ -1,21 +1,25 @@
-function App() {
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import store from './Redux/configureStore';
+import Navbar from './Components/Navbar';
+import Home from './Pages/Home';
+import Details from './Pages/Details';
+import { getCountriesList } from './Redux/countries/countries';
+import Footer from './Components/Footer';
+
+const App = () => {
+  store.dispatch(getCountriesList());
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/details/:name" element={<Details />} />
+      </Routes>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
